@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  <div class="row" id="content">
+    <div class="col-6" id="imagen">
+      <img src="{{ creadorDetail.imagen }}" style="float:left; padding:30px" alt="{{creadorDetail.nombre}}">
+    </div>
+    <div class="col">
+      <div class="container-fluid" id="info">
+        <h2>{{ creadorDetail.nombre }}</h2>
+        <h4>{{ creadorDetail.nacionalidad }}</h4>
+      </div>
+      <div *ngIf="creadorDetail.albumes.length != 0">
+        <div class="container-fluid">
+          <h3>Albums</h3>
+          <div class="row" style="padding: 1rem .5rem 1rem .5rem">
+            <div *ngFor="let album of creadorDetail.albumes" class="col-md-3 mb-3">
+              <a routerLink="/album-podcast/albums/{{ album.id }}" style="text-decoration: none" target="_top">
+              <div class="card p-2" id="{{album.titulo}}">
+                  <img src="{{ album.imagen }}" alt="{{ album.titulo }}" class="card-img-top" style="width:5rem">
+                <div class="card-body">
+                  <h5 class="card-title" style="color:black;">{{ album.titulo }}</h5>
+                </div>
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="creadorDetail.podcasts.length != 0">
+        <div class="container-fluid">
+          <h3>Podcasts</h3>
+          <div class="row" style="padding: 1rem .5rem 1rem .5rem">
+            <div *ngFor="let podcast of creadorDetail.podcasts" class="col-md-3 mb-3">
+              <a routerLink="/album-podcast/podcasts/{{ podcast.id }}" style="text-decoration: none" target="_top">
+              <div class="card p-2" id="{{podcast.titulo}}">
+                  <img src="{{ podcast.imagen }}" alt="{{ podcast.titulo }}" class="card-img-top" style="width:5rem">
+                <div class="card-body">
+                  <h5 class="card-title" style="color:black;">{{ podcast.titulo }}</h5>
+                </div>
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

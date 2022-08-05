@@ -1,0 +1,52 @@
+/* img {
+  height: 200px;
+  width: auto;
+} */
+
+.card {
+  border: 0px solid rgba(0, 0, 0, .125);
+  border-radius: 0rem;
+  background-color: transparent;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+  z-index: 3;
+  border-color: #007bff !important;
+}
+
+.card-body {
+  align-items: center;
+  text-align: center;
+
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: .87em;
+  letter-spacing: 0.3rem;
+  word-wrap: normal;
+}
+
+.card-text {
+  font-weight: light;
+  font-size: small;
+  color: #898787;
+  word-wrap: normal;
+}
+
+button {
+  margin-right: .2rem;
+  margin-left: .2rem;
+}
+
+input {
+  margin-right: .5rem;
+}
+
+#search-sort {
+  display: flex;
+}

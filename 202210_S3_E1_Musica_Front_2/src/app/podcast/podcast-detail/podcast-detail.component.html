@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <div>
+    <div>
+      <img src="{{ podcastDetail.imagen }}" style="float:left; padding:30px" alt="{{ podcastDetail.titulo }}">
+    </div>
+    <div id>
+      <h2>{{ podcastDetail.titulo }}</h2>
+      <h4>{{ turnNamesToString(getCreadorNameList(podcastDetail)) }}</h4>
+      <h5>$ {{podcastDetail.precio}} USD</h5>
+    </div>
+  </div>
+  <br>
+  <app-capitulo-list [podcastId]="podcastId" [capitulos]="podcastDetail.capitulos"></app-capitulo-list>
+</div>

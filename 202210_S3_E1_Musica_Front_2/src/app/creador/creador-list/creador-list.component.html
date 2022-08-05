@@ -1,0 +1,77 @@
+<div class="container-fluid" style="padding-top: 2rem;">
+<div class="container-fluid" id="inputs">
+  <input type="text" class="form-control" id="filtroCreador" [(ngModel)]="searchText" (ngModelChange)="filterByCreatorName()" placeholder="Filtrar por nombre de creador">
+  <button (click)="sortAsc()" type="button" class="btn btn-light">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-up"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" />
+      <path
+        d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zm-8.46-.5a.5.5 0 0 1-1 0V3.707L2.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L4.5 3.707V13.5z" />
+    </svg>
+  </button>
+
+  <button (click)="sortDesc()" type="button" class="btn btn-light">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" />
+      <path
+        d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" />
+    </svg>
+  </button>
+</div>
+<div class="container-fluid" style="background: white;">
+  <div class="row" style="padding: 2rem .5rem 1rem .5rem">
+    <div class="col-md-6" id="artistas">
+      <h3 style="text-align:center;">Artistas</h3>
+      <div class="row" style="padding: 1rem .5rem 1rem .5rem">
+        <div *ngFor="let creador of getArtistas(creadores)" class="col-md-4 mb-4">
+          <div class="card p-2" (click)="onSelected(creador)" id="{{creador.nombre}}" data-bs-toggle="modal" data-bs-target="#modal-creador">
+            <div class="background-img">
+              <img src="{{ creador.imagen }}" alt="{{ creador.nombre }}" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{creador.nombre}}</h5>
+              <p class="card-text">{{creador.nacionalidad}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h3 style="text-align:center;">Autores</h3>
+      <div class="row" style="padding: 1rem .5rem 1rem .5rem">
+        <div *ngFor="let creador of getAutores(creadores)" class="col-md-4 mb-4">
+          <div class="card p-2" (click)="onSelected(creador)" id="{{creador.nombre}}" data-bs-toggle="modal" data-bs-target="#modal-creador">
+            <div class="background-img">
+              <img src="{{ creador.imagen }}" alt="{{ creador.nombre }}" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{creador.nombre}}</h5>
+              <p class="card-text">{{creador.nacionalidad}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="selectedCreador != undefined">
+  <div class="modal fade" id="modal-creador" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" role="dialog">
+    <div class="modal-xl modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <app-creador-detail [creadorDetail]="selectedCreador"></app-creador-detail>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

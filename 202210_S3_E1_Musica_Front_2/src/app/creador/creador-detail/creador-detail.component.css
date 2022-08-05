@@ -1,0 +1,37 @@
+img {
+  width: 30rem;
+  height: auto;
+}
+
+#content {
+  display: flex;
+}
+
+#info {
+  margin: 1rem 0rem 10rem 0rem;
+}
+
+h4 {
+  font-style: italic;
+}
+
+.card {
+  border: 0px solid rgba(0, 0, 0, .125);
+  border-radius: 0rem;
+  background-color: transparent;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card-body {
+  align-items: center;
+  text-align: center;
+
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: .87em;
+  letter-spacing: 0.3rem;
+  word-wrap: normal;
+}

@@ -1,0 +1,32 @@
+<div *ngIf="capitulos.length != 0; else elseBlock">
+  {{sortCaps()}}
+  <div class="container-fluid">
+    <h5>Capitulos</h5>
+    <table class="table" aria-label="list of songs in an album">
+      <thead>
+        <tr>
+          <th class="h6" scope="col"></th>
+          <th class="h6" scope="col">Titulo</th>
+          <th class="h6" scope="col">Duracion</th>
+          <th class="h6" scope="col">Fecha Publicacion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let capitulo of capitulos">
+          <td>
+            <img src="{{ capitulo.imagen }}" alt="{{ capitulo.titulo }}" width="50px">
+          </td>
+          <td>
+            {{capitulo.titulo}}
+          </td>
+          <td>
+            {{transformDuration(capitulo.duracion)}}
+          </td>
+          <td>
+            {{capitulo.fechaPublicacion}}
+          </td>
+      </tbody>
+    </table>
+  </div>
+</div>
+<ng-template #elseBlock>Todavia no hay capitulos en este podcast</ng-template>

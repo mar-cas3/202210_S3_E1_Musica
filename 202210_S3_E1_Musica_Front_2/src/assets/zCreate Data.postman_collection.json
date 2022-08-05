@@ -1,0 +1,4181 @@
+{
+	"info": {
+		"_postman_id": "e4658a9a-a707-4f15-9ff1-bd1858b156be",
+		"name": "zCreate Data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19997835"
+	},
+	"item": [
+		{
+			"name": "Albums",
+			"item": [
+				{
+					"name": "Create Albums",
+					"item": [
+						{
+							"name": "Album 1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('a1', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"sour\", \n    \"imagen\" : \"https://upload.wikimedia.org/wikipedia/en/b/b2/Olivia_Rodrigo_-_SOUR.png\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/albums",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Album 2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('a2', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"Flower Boy\", \n    \"imagen\" : \"https://upload.wikimedia.org/wikipedia/en/c/c3/Tyler%2C_the_Creator_-_Flower_Boy.png\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/albums",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Album 3",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('a3', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"Abbey Road\", \n    \"imagen\" : \"https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/albums",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Album 4",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('a4', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"Future Nostalgia\", \n    \"imagen\" : \"https://upload.wikimedia.org/wikipedia/en/f/f5/Dua_Lipa_-_Future_Nostalgia_%28Official_Album_Cover%29.png\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/albums",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Album 5",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('a5', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"The Dark Side of the Moon\", \n    \"imagen\" : \"https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/albums",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create Cancion",
+					"item": [
+						{
+							"name": "Cancion 1a Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('ca2', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"Brutal\", \n    \"duracion\" : \"143\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/canciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"canciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancion 1a Copy 2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('ca3', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"Traitor\", \n    \"duracion\" : \"229\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/canciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"canciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancion 1a Copy 3",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('ca4', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"Drivers License\", \n    \"duracion\" : \"242\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/canciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"canciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancion 1a Copy 4",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('ca5', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"1 Step Forward, 3 Steps Back\", \n    \"duracion\" : \"163\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/canciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"canciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancion 1a",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('ca1', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"Deja Vu\", \n    \"duracion\" : \"215\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/canciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"canciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancion 1a Copy 5",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('ca6', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"Good 4 U\", \n    \"duracion\" : \"178\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/canciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"canciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancion 1a Copy 6",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('ca7', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"Enough for You\", \n    \"duracion\" : \"202\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/canciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"canciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancion 1a Copy 7",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('ca8', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"Happier\", \n    \"duracion\" : \"175\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/canciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"canciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancion 1a Copy 8",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('ca9', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"Jealousy, Jealousy\", \n    \"duracion\" : \"173\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/canciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"canciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancion 1a Copy 9",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('ca10', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"Favorite Crime\", \n    \"duracion\" : \"152\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/canciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"canciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancion 1a Copy 10",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('ca11', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\" : \"Hope Ur Ok\", \n    \"duracion\" : \"209\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/canciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"canciones"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create Creador",
+					"item": [
+						{
+							"name": "Creador 1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('cr1', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Olivia Rodrigo\",\n    \"nacionalidad\": \"American\",\n    \"imagen\": \"https://upload.wikimedia.org/wikipedia/commons/3/3d/Olivia_Rodrigo_at_Vice_President%27s_West_Wing_office_%282%29.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador 2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('cr2', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Tyler, the Creator\",\n    \"nacionalidad\": \"American\",\n    \"imagen\": \"https://i.discogs.com/MDOZy8iKeUZIs_mp7rswtuarQ_u7jiGDIvR7R5fMnA8/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE5Njcy/NjgtMTYyNDAyOTkw/Ni0yMjM1LmpwZWc.jpeg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador 3",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('cr3', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"The Beatles\",\n    \"nacionalidad\": \"British\",\n    \"imagen\": \"https://www.rockandpop.cl/wp-content/uploads/2019/11/the-beatles.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador 3 Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('cr3a', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Paul McCartney\",\n    \"nacionalidad\": \"British\",\n    \"imagen\": \"https://los40es00.epimg.net/los40/imagenes/2020/12/23/los40classic/1608723212_225459_1608723516_noticia_normal.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador 3 Copy 2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('cr3b', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"John Lennon\",\n    \"nacionalidad\": \"British\",\n    \"imagen\": \"https://imagessl.casadellibro.com/img/autores/13858.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador 3 Copy 3",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('cr3c', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"George Harrison\",\n    \"nacionalidad\": \"British\",\n    \"imagen\": \"https://media.ambito.com/p/07ce87e14ff5516b8c5c779c8153f2b5/adjuntos/239/imagenes/039/492/0039492808/george-harrisonjpg.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador 3 Copy 4",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('cr3d', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Ringo Starr\",\n    \"nacionalidad\": \"British\",\n    \"imagen\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Ringo_Starr_NY_1964.png/220px-Ringo_Starr_NY_1964.png\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador 4",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('cr4', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Dua Lipa\",\n    \"nacionalidad\": \"British\",\n    \"imagen\": \"https://upload.wikimedia.org/wikipedia/commons/9/95/Dua_Lipa_with_Warner_Music.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador 5",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('cr5', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Pink Floyd\",\n    \"nacionalidad\": \"British\",\n    \"imagen\": \"https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Pink_Floyd_-_all_members.jpg/250px-Pink_Floyd_-_all_members.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Album-Creador",
+					"item": [
+						{
+							"name": "A1-CR1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a1}}/creadores/{{cr1}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a1}}",
+										"creadores",
+										"{{cr1}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CR1 Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a2}}/creadores/{{cr2}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a2}}",
+										"creadores",
+										"{{cr2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CR1 Copy 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a3}}/creadores/{{cr3}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a3}}",
+										"creadores",
+										"{{cr3}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CR1 Copy 2a",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a3}}/creadores/{{cr3a}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a3}}",
+										"creadores",
+										"{{cr3a}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CR1 Copy 2b",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a3}}/creadores/{{cr3b}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a3}}",
+										"creadores",
+										"{{cr3b}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CR1 Copy 2c",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a3}}/creadores/{{cr3c}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a3}}",
+										"creadores",
+										"{{cr3c}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CR1 Copy 2d",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a3}}/creadores/{{cr3d}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a3}}",
+										"creadores",
+										"{{cr3d}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CR1 Copy 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a4}}/creadores/{{cr4}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a4}}",
+										"creadores",
+										"{{cr4}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CR1 Copy 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a5}}/creadores/{{cr5}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a5}}",
+										"creadores",
+										"{{cr5}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Album-Cancion",
+					"item": [
+						{
+							"name": "A1-CA1a",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a1}}/canciones/{{ca2}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a1}}",
+										"canciones",
+										"{{ca2}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CA1a Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a1}}/canciones/{{ca3}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a1}}",
+										"canciones",
+										"{{ca3}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CA1a Copy 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a1}}/canciones/{{ca4}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a1}}",
+										"canciones",
+										"{{ca4}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CA1a Copy 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a1}}/canciones/{{ca5}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a1}}",
+										"canciones",
+										"{{ca5}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CA1a Copy 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a1}}/canciones/{{ca1}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a1}}",
+										"canciones",
+										"{{ca1}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CA1a Copy 5",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a1}}/canciones/{{ca6}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a1}}",
+										"canciones",
+										"{{ca6}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CA1a Copy 6",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a1}}/canciones/{{ca7}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a1}}",
+										"canciones",
+										"{{ca7}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CA1a Copy 7",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a1}}/canciones/{{ca8}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a1}}",
+										"canciones",
+										"{{ca8}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CA1a Copy 8",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a1}}/canciones/{{ca9}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a1}}",
+										"canciones",
+										"{{ca9}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CA1a Copy 9",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a1}}/canciones/{{ca10}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a1}}",
+										"canciones",
+										"{{ca10}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "A1-CA1a Copy 10",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/albums/{{a1}}/canciones/{{ca11}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"albums",
+										"{{a1}}",
+										"canciones",
+										"{{ca11}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CR1-AR1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/creadores/{{cr1}}/albums/{{a1}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"creadores",
+								"{{cr1}}",
+								"albums",
+								"{{a1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CR1-AR1 Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/creadores/{{cr2}}/albums/{{a2}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"creadores",
+								"{{cr2}}",
+								"albums",
+								"{{a2}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CR1-AR1 Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/creadores/{{cr3}}/albums/{{a3}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"creadores",
+								"{{cr3}}",
+								"albums",
+								"{{a3}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CR1-AR1 Copy 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/creadores/{{cr4}}/albums/{{a4}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"creadores",
+								"{{cr4}}",
+								"albums",
+								"{{a4}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CR1-AR1 Copy 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/creadores/{{cr5}}/albums/{{a5}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"creadores",
+								"{{cr5}}",
+								"albums",
+								"{{a5}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/creadores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/creadores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"creadores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/albums",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/albums",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"albums"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Podcasts",
+			"item": [
+				{
+					"name": "zCreate Creadores",
+					"item": [
+						{
+							"name": "Crear creador 1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('1creadorId', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Night Vale Presents\",\n    \"nacionalidad\": \"USA\",\n    \"imagen\": \"http://images.squarespace-cdn.com/content/v1/56660bf257eb8dd25948eabe/1598626255356-6YCTL09TJ8G82LZ79F0J/NightValePresents.jpg?format=1500w\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear creador 2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('2creadorId', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"The New York Times\",\n    \"nacionalidad\": \"USA\",\n    \"imagen\": \"https://s3-symbol-logo.tradingview.com/new-york-times--600.png\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear creador 3",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('3creadorId', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"David Edmonds\",\n    \"nacionalidad\": \"USA\",\n    \"imagen\": \"https://www.practicalethics.ox.ac.uk/sites/default/files/practicalethics/images/media/edmonds_david.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear creador 4",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('4creadorId', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Nigel Warburton\",\n    \"nacionalidad\": \"USA\",\n    \"imagen\": \"https://herder.com.mx/sites/default/files/uploads/writer_images/nigelwarburton.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear creador 5",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('5creadorId', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Nicole Byer\",\n    \"nacionalidad\": \"USA\",\n    \"imagen\": \"https://es.web.img3.acsta.net/pictures/19/09/06/00/36/0089419.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear creador 6",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('6creadorId', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Spotify Originals\",\n    \"nacionalidad\": \"USA\",\n    \"imagen\": \"https://img.blogs.es/anexom/wp-content/uploads/2021/09/que-es-spotify.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create Creador 2",
+					"item": [
+						{
+							"name": "Creador P 1 Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('crp2', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Joe Rogan\",\n    \"nacionalidad\": \"American\",\n    \"imagen\": \"https://media.nu.nl/m/k7bx6c0ao04l_sqr256.jpg/joe-rogan-belooft-beter-onderzoek-te-doen-in-spotify-podcast-na-ophef.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador P 1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('crp1', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Emma Chamberlain\",\n    \"nacionalidad\": \"American\",\n    \"imagen\": \"https://media.vogue.es/photos/613fcff9d5557339b7c6a632/2:3/w_2560%2Cc_limit/GettyImages-1340119913.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador P 1 Copy 2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('crp3', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"MrBallen\",\n    \"nacionalidad\": \"American\",\n    \"imagen\": \"https://www.zodiacciphers.com/uploads/4/9/7/1/4971630/screenshot-2020-12-26-mrballen_orig.png\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador P 1 Copy 3",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('crp4', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Alex Cooper\",\n    \"nacionalidad\": \"American\",\n    \"imagen\": \"https://washingtonindependent.com/static/aed5f59460d7d41718e8e9fb0b4c08e4/b8c01/alex-cooper.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador P 1 Copy 4",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('crp5', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"David Dobrik\",\n    \"nacionalidad\": \"American\",\n    \"imagen\": \"https://pbs.twimg.com/profile_images/1223706175910211584/tmu8d9fA_400x400.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador P 1 Copy 5",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('crp6', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\": \"Jason Nash\",\n    \"nacionalidad\": \"American\",\n    \"imagen\": \"https://www.thewikifeed.com/wp-content/uploads/2021/10/jason-nash-1.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "zCreate Podcasts",
+					"item": [
+						{
+							"name": "Create podcast 1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('1podcastId', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"Start with This\",\n    \"calificacion\": \"5\",\n    \"imagen\": \"https://media.timeout.com/images/105849078/750/562/image.jpg\",\n    \"descripcion\": \"start with this\",\n    \"precio\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create podcast 2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('2podcastId', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"1619\",\n    \"calificacion\": \"4\",\n    \"imagen\": \"https://media.timeout.com/images/105849087/750/562/image.jpg\",\n    \"descripcion\": \"1619\",\n    \"precio\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create podcast 3",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('3podcastId', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"Philosophy Bites\",\n    \"calificacion\": \"5\",\n    \"imagen\": \"https://media.timeout.com/images/105849079/750/562/image.jpg\",\n    \"descripcion\": \"philosophy bites\",\n    \"precio\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create podcast 4",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('4podcastId', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"Why Won't You Date Me\",\n    \"calificacion\": \"3\",\n    \"imagen\": \"https://media.timeout.com/images/105849090/750/562/image.jpg\",\n    \"descripcion\": \"why won't you date me\",\n    \"precio\": 4\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create podcast 5",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('5podcastId', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"Crime show\",\n    \"calificacion\": \"4\",\n    \"imagen\": \"https://media.timeout.com/images/105849416/750/562/image.jpg\",\n    \"descripcion\": \"crime show\",\n    \"precio\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create Podcast",
+					"item": [
+						{
+							"name": "Podcast 1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable(\"pod1\", data.id); ",
+											"tests[\"no genera error en el Post\"] = responseCode.code === 201; "
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"Anything Goes with Emma Chamberlain\",\n    \"calificacion\": \"Good\",\n    \"imagen\": \"https://cdns-images.dzcdn.net/images/talk/f34822a917d6c46de4d77125207acb13/1000x1000.jpg\",\n    \"descripcion\": \"Recorded from the comfort of her bed, Emma talks at length about whatever is on her mind every week. Anything really does go on this podcast. You never know what you are going to get, but that’s what keeps it interesting.\",\n    \"precio\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Podcast 1 Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable(\"pod2\", data.id); ",
+											"tests[\"no genera error en el Post\"] = responseCode.code === 201; "
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"The Joe Rogan Experience\",\n    \"calificacion\": \"Good\",\n    \"imagen\": \"https://upload.wikimedia.org/wikipedia/en/4/4b/The_Joe_Rogan_Experience_logo.jpg\",\n    \"descripcion\": \"The official podcast of comedian Joe Rogan. Follow The Joe Rogan Clips show page for some of the best moments from the episodes.\",\n    \"precio\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Podcast 1 Copy 2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable(\"pod3\", data.id); ",
+											"tests[\"no genera error en el Post\"] = responseCode.code === 201; "
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"MrBallen Podcast: Strange, Dark & Mysterious Stories\",\n    \"calificacion\": \"Good\",\n    \"imagen\": \"https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/9f/76/09/9f760909-6680-a2c7-2555-3c3d4f61ffbd/mza_2721901663862356505.jpg/1000x1000bb.jpg\",\n    \"descripcion\": \"The Strange, Dark and Mysterious delivered in podcast format.\",\n    \"precio\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Podcast 1 Copy 3",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable(\"pod4\", data.id); ",
+											"tests[\"no genera error en el Post\"] = responseCode.code === 201; "
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"Call Her Daddy\",\n    \"calificacion\": \"Good\",\n    \"imagen\": \"https://upload.wikimedia.org/wikipedia/en/1/10/Call_Her_Daddy_Podcast_Cover.jpg\",\n    \"descripcion\": \"The woman-led empire of Call Her Daddy produces raw, relevant and provocative conversations that promote sexual liberty and personal empowerment while stripping away any barriers of judgement. Episodes only on Spotify starting 07/21\",\n    \"precio\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Podcast 1 Copy 4",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable(\"pod5\", data.id); ",
+											"tests[\"no genera error en el Post\"] = responseCode.code === 201; "
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"Views\",\n    \"calificacion\": \"Good\",\n    \"imagen\": \"https://i.scdn.co/image/ab6765630000ba8a57eaa4f04e001862bc4af39e\",\n    \"descripcion\": \"In this podcast, David Dobrik, and Jason Nash, take you behind-the-scenes of their vlogs and show you what living the “YouTube life” is really like. New episodes drop every Tuesday!\",\n    \"precio\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "zCreate Capitulos",
+					"item": [
+						{
+							"name": "Crear capitulo 1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId1', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"#1169 Elon Musk\",\n    \"imagen\": \"https://i.ytimg.com/vi/ycPr5-27vSI/sddefault.jpg\",\n    \"duracion\": 1498,\n    \"fechaPublicacion\": \"2018-12-21\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{pod2}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{pod2}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 4",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId4', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"#1178 Dr Rhonda Patrick\",\n    \"imagen\": \"https://images.squarespace-cdn.com/content/v1/55d03978e4b0a93726213f93/1573345935019-1U34O19DA3GDT61NKH80/joe-rogan-experience-1178-dr-rhonda-patrick-youtube-thumbnail.jpg\",\n    \"duracion\": 1365,\n    \"fechaPublicacion\": \"2018-12-21\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{pod2}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{pod2}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 5",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId5', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"#1299 Annie Jacobsen\",\n    \"imagen\": \"https://www.jrepodcast.com/wp-content/uploads/2019/05/joe-rogan-experience-1299-annie-jacobsen-youtube-thumbnail.jpg\",\n    \"duracion\": 1412,\n    \"fechaPublicacion\": \"2018-12-22\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{pod2}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{pod2}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 3",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId3', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"#1348 Bill Burr\",\n    \"imagen\": \"https://i.ytimg.com/vi/--SCDa1zsYI/sddefault.jpg\",\n    \"duracion\": 1874,\n        \"fechaPublicacion\": \"2018-12-23\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{pod2}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{pod2}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId2', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"#1532 Mike Tyson\",\n    \"imagen\": \"https://i.ytimg.com/vi/hcPUoxTvw5g/sddefault.jpg\",\n    \"duracion\": 1574,\n    \"fechaPublicacion\": \"2018-12-25\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{pod2}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{pod2}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 6",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId6', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"1. The Fight for a True Democracy\",\n    \"imagen\": \"https://static01.nyt.com/images/2019/10/16/podcasts/1619-album-art-copy/1619-album-art-jumbo.jpg?quality=75&auto=webp\",\n    \"duracion\": 1300,\n    \"fechaPublicacion\": \"2019-08-23\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{2podcastId}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{2podcastId}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 7",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId7', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"2. The Economy That Slavery Built\",\n    \"imagen\": \"https://static01.nyt.com/images/2019/10/16/podcasts/1619-album-art-copy/1619-album-art-jumbo.jpg?quality=75&auto=webp\",\n    \"duracion\": 1573,\n    \"fechaPublicacion\": \"2019-08-30\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{2podcastId}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{2podcastId}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 8",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId8', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"3. The Birth of American Music\",\n    \"imagen\": \"https://static01.nyt.com/images/2019/10/16/podcasts/1619-album-art-copy/1619-album-art-jumbo.jpg?quality=75&auto=webp\",\n    \"duracion\": 1525,\n    \"fechaPublicacion\": \"2019-09-06\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{2podcastId}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{2podcastId}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 9",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId9', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"4. How the Bad Blood Started\",\n    \"imagen\": \"https://static01.nyt.com/images/2019/10/16/podcasts/1619-album-art-copy/1619-album-art-jumbo.jpg?quality=75&auto=webp\",\n    \"duracion\": 1432,\n    \"fechaPublicacion\": \"2019-09-13\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{2podcastId}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{2podcastId}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 10",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId10', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"5. The Land of Our Fathers, Part 1\",\n    \"imagen\": \"https://static01.nyt.com/images/2019/10/16/podcasts/1619-album-art-copy/1619-album-art-jumbo.jpg?quality=75&auto=webp\",\n    \"duracion\": 1743,\n    \"fechaPublicacion\": \"2019-10-04\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{2podcastId}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{2podcastId}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 11",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId11', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"6. The Land of Our Fathers, Part 2\",\n    \"imagen\": \"https://static01.nyt.com/images/2019/10/16/podcasts/1619-album-art-copy/1619-album-art-jumbo.jpg?quality=75&auto=webp\",\n    \"duracion\": 1876,\n    \"fechaPublicacion\": \"2019-10-11\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{2podcastId}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{2podcastId}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 12",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId12', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"Perceiving the Audience w/Sarah Maria Griffin\",\n    \"imagen\": \"https://images.squarespace-cdn.com/content/v1/56660bf257eb8dd25948eabe/1548445841567-NK2POYSXUS921VMK2LGT/SWT_MintGreen.jpg?format=500w\",\n    \"duracion\": 1342,\n    \"fechaPublicacion\": \"2020-10-11\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{1podcastId}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{1podcastId}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 13",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId13', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"The Burnout Cycle w/Janina Matthewson\",\n    \"imagen\": \"https://images.squarespace-cdn.com/content/v1/56660bf257eb8dd25948eabe/1548445841567-NK2POYSXUS921VMK2LGT/SWT_MintGreen.jpg?format=500w\",\n    \"duracion\": 1346,\n    \"fechaPublicacion\": \"2020-10-12\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{1podcastId}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{1podcastId}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 14",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId14', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"But How Does It End?\",\n    \"imagen\": \"https://images.squarespace-cdn.com/content/v1/56660bf257eb8dd25948eabe/1548445841567-NK2POYSXUS921VMK2LGT/SWT_MintGreen.jpg?format=500w\",\n    \"duracion\": 1798,\n    \"fechaPublicacion\": \"2020-10-13\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{1podcastId}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{1podcastId}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 15",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId15', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"Like This But Better\",\n    \"imagen\": \"https://images.squarespace-cdn.com/content/v1/56660bf257eb8dd25948eabe/1548445841567-NK2POYSXUS921VMK2LGT/SWT_MintGreen.jpg?format=500w\",\n    \"duracion\": 1345,\n    \"fechaPublicacion\": \"2020-10-14\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{1podcastId}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{1podcastId}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear capitulo 16",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);",
+											"postman.setGlobalVariable('capituloId16', data.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"titulo\": \"How to Like\",\n    \"imagen\": \"https://images.squarespace-cdn.com/content/v1/56660bf257eb8dd25948eabe/1548445841567-NK2POYSXUS921VMK2LGT/SWT_MintGreen.jpg?format=500w\",\n    \"duracion\": 1835,\n    \"fechaPublicacion\": \"2020-10-15\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{1podcastId}}/capitulos",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{1podcastId}}",
+										"capitulos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Podcast-Creador",
+					"item": [
+						{
+							"name": "Podcast-Creador Copy",
+							"item": [
+								{
+									"name": "P1-CRP1",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/podcasts/{{pod1}}/creadores/{{crp1}}",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"podcasts",
+												"{{pod1}}",
+												"creadores",
+												"{{crp1}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "P1-CRP1 Copy",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/podcasts/{{pod2}}/creadores/{{crp2}}",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"podcasts",
+												"{{pod2}}",
+												"creadores",
+												"{{crp2}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "P1-CRP1 Copy 2",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/podcasts/{{pod3}}/creadores/{{crp3}}",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"podcasts",
+												"{{pod3}}",
+												"creadores",
+												"{{crp3}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "P1-CRP1 Copy 3",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/podcasts/{{pod4}}/creadores/{{crp4}}",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"podcasts",
+												"{{pod4}}",
+												"creadores",
+												"{{crp4}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "P1-CRP1 Copy 4",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/podcasts/{{pod5}}/creadores/{{crp5}}",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"podcasts",
+												"{{pod5}}",
+												"creadores",
+												"{{crp5}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "P1-CRP1 Copy 5",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/podcasts/{{pod5}}/creadores/{{crp6}}",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"podcasts",
+												"{{pod5}}",
+												"creadores",
+												"{{crp6}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "P1-CRP1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/creadores/{{crp1}}/podcasts/{{pod1}}/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"creadores",
+										"{{crp1}}",
+										"podcasts",
+										"{{pod1}}",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "P1-CRP1 Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/creadores/{{crp2}}/podcasts/{{pod2}}/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"creadores",
+										"{{crp2}}",
+										"podcasts",
+										"{{pod2}}",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "P1-CRP1 Copy 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/creadores/{{crp3}}/podcasts/{{pod3}}/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"creadores",
+										"{{crp3}}",
+										"podcasts",
+										"{{pod3}}",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "P1-CRP1 Copy 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/creadores/{{crp4}}/podcasts/{{pod4}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"creadores",
+										"{{crp4}}",
+										"podcasts",
+										"{{pod4}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "P1-CRP1 Copy 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/creadores/{{crp5}}/podcasts/{{pod5}}/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"creadores",
+										"{{crp5}}",
+										"podcasts",
+										"{{pod5}}",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "P1-CRP1 Copy 5",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/creadores/{{crp6}}/podcasts/{{pod5}}/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"creadores",
+										"{{crp6}}",
+										"podcasts",
+										"{{pod5}}",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "zUnir Creadores and Podcasts",
+					"item": [
+						{
+							"name": "Creador 1 Podcast 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores/{{1creadorId}}/podcasts/{{1podcastId}}",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores",
+										"{{1creadorId}}",
+										"podcasts",
+										"{{1podcastId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Podcast 1 Creador 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{1podcastId}}/creadores/{{1creadorId}}/",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{1podcastId}}",
+										"creadores",
+										"{{1creadorId}}",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador 1 Podcast 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores/{{2creadorId}}/podcasts/{{2podcastId}}",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores",
+										"{{2creadorId}}",
+										"podcasts",
+										"{{2podcastId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Podcast 2 Creador 1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{2podcastId}}/creadores/{{2creadorId}}/",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{2podcastId}}",
+										"creadores",
+										"{{2creadorId}}",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador 1 Podcast 5",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores/{{3creadorId}}/podcasts/{{3podcastId}}",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores",
+										"{{3creadorId}}",
+										"podcasts",
+										"{{3podcastId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Podcast 5 Creador 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{3podcastId}}/creadores/{{3creadorId}}/",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{3podcastId}}",
+										"creadores",
+										"{{3creadorId}}",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador 1 Podcast 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores/{{4creadorId}}/podcasts/{{3podcastId}}",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores",
+										"{{4creadorId}}",
+										"podcasts",
+										"{{3podcastId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Podcast 4 Creador 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{3podcastId}}/creadores/{{4creadorId}}/",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{3podcastId}}",
+										"creadores",
+										"{{4creadorId}}",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador 2 Podcast 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores/{{5creadorId}}/podcasts/{{4podcastId}}",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores",
+										"{{5creadorId}}",
+										"podcasts",
+										"{{4podcastId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Podcast 3 Creador 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{4podcastId}}/creadores/{{5creadorId}}/",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{4podcastId}}",
+										"creadores",
+										"{{5creadorId}}",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Creador 2 Podcast 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores/{{6creadorId}}/podcasts/{{5podcastId}}",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores",
+										"{{6creadorId}}",
+										"podcasts",
+										"{{5podcastId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Podcast 4 Creador 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{5podcastId}}/creadores/{{6creadorId}}/",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{5podcastId}}",
+										"creadores",
+										"{{6creadorId}}",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get creadores of podcast 1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{1podcastId}}/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{1podcastId}}",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get creadores of podcast 2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{2podcastId}}/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{2podcastId}}",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get creadores of podcast 3",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{3podcastId}}/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{3podcastId}}",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get creadores of podcast 4",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{4podcastId}}/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{4podcastId}}",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get creadores of podcast 5",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/podcasts/{{5podcastId}}/creadores",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"podcasts",
+										"{{5podcastId}}",
+										"creadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get podcasts of creador 1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores/{{1creadorId}}/podcasts/",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores",
+										"{{1creadorId}}",
+										"podcasts",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get podcasts of creador 2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores/{{2creadorId}}/podcasts/",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores",
+										"{{2creadorId}}",
+										"podcasts",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get podcasts of creador 3",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var data = JSON.parse(responseBody);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{ip}}:{{puerto}}/api/creadores/{{3creadorId}}/podcasts/",
+									"protocol": "http",
+									"host": [
+										"{{ip}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"api",
+										"creadores",
+										"{{3creadorId}}",
+										"podcasts",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "http://localhost:8080/api/creadores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/creadores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"creadores"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

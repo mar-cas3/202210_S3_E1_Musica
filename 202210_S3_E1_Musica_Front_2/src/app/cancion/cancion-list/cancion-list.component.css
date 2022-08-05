@@ -1,0 +1,7 @@
+table {
+  border-top: 2px solid lightgray;
+}
+
+#thead {
+  visibility: collapse;
+}

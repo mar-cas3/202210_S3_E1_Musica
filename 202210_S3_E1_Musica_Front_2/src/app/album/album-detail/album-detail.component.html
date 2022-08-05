@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <div class="img-container">
+          <img src="{{albumDetail.imagen}}" class="img-fluid" alt="{{albumDetail.titulo}}">
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h2>{{albumDetail.titulo}}</h2>
+          <h3>{{ getArtistsAsStr(albumDetail.artistas) | join: ', '}}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-cancion-list [albumId]="albumId" [canciones]="albumDetail.canciones"></app-cancion-list>
+</div>

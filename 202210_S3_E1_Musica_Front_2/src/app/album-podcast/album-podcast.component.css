@@ -1,0 +1,25 @@
+.all {
+  display: flex;
+}
+
+.container-fluid {
+  background-image: url(src/assets/A&P_Background2.svg);
+  background-size: cover;
+}
+
+
+h2 {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.section {
+  display: inline-block;
+  width: 50%;
+  margin: 1rem;
+  background: linear-gradient(180deg, rgba(190,212,246,1) 0%, rgba(236,236,245,1) 100%);
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+

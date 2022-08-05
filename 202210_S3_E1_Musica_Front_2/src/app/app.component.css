@@ -1,0 +1,26 @@
+* [lang^=en] {
+  color: green;
+}
+
+.navbar-brand {
+  color: black;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#navbarNav {
+  justify-content: end;
+  margin: .2rem 0rem 0rem 0rem;
+}
+
+#blue-bb {
+  background-color: #7399D2;
+  padding: .2rem 0rem .2rem 1rem;
+}
+
+.nav-link {
+  color:white;
+}
+
+

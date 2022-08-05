@@ -1,0 +1,20 @@
+<div *ngIf="canciones.length != 0; else elseBlock">
+  <div class="container-fluid">
+    <table class="table" aria-label="list of songs in an album">
+      <thead id="thead">
+        <th scope="col">#</th>
+        <th scope="col">Titulo</th>
+        <th scope="col">Duration</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of canciones">
+          <td>{{c.id}}</td>
+          <td>{{c.titulo}}</td>
+          <td>{{c.duracion * 1000 | date:'m:ss'}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<ng-template #elseBlock>Todavia no hay canciones en este album</ng-template>
+

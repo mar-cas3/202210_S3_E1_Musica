@@ -1,0 +1,34 @@
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg" style="background-color: #bed4f6">
+  <div class="container-fluid" style="margin: 0rem 1rem 0rem 1rem">
+    <a class="navbar-brand" href="#">MUSICALLY</a>
+    <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div id="blue-bb">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/album-podcast/list"> Albums & Podcasts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/artist-author/list"> Artists & Authors</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<!-- Main Router Outlet -->
+<div class="container-fluid" id="principal">
+  <div class="row">
+    <div class="col-md-12">
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
